@@ -1,0 +1,37 @@
+.glow-icon {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 2px #00ffff);
+  }
+  to {
+    filter: drop-shadow(0 0 6px #00ffff);
+  }
+}
+
+.pulse-icon {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #00ffff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
